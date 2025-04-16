@@ -1,0 +1,302 @@
+/* Dark Theme Background */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #f4f4f4; /* Light text color for dark background */
+  background-color: #121212; /* Dark background color */
+}
+
+/* Ensure the body and html take up the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Bar Styling */
+header {
+  background-color: #1e1e1e; /* Slightly lighter dark background for the header */
+  padding: 20px 0; /* Increase padding to make the navbar taller */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px; /* Add spacing between links */
+}
+
+nav ul li a {
+  color: #f4f4f4; /* Light text color for links */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px; /* Add padding to links for better clickability */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+  background-color: #333; /* Subtle hover effect */
+  border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+nav ul li a.active {
+  color: #ffd700; /* Highlight the active link with a gold color */
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  flex: 1; /* This makes the main content take up the remaining space */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #333, #1e1e1e); /* Dark gradient background */
+  color: #f4f4f4; /* Light text color */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #ffd700; /* Gold button color */
+  color: #121212; /* Dark text color for contrast */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background: #ffcc00; /* Slightly brighter gold on hover */
+}
+
+/* Introduction Section */
+.introduction {
+  background-color: #1e1e1e; /* Dark background for sections */
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.introduction h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.introduction p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Featured Projects Section */
+.featured-projects {
+  background-color: #1e1e1e; /* Dark background for sections */
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.featured-projects h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project-card {
+  border: 1px solid #333; /* Subtle border for separation */
+  border-radius: 8px;
+  padding: 1.5em;
+  background-color: #2a2a2a; /* Slightly lighter dark background for cards */
+  color: #f4f4f4; /* Light text color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.project-card .btn {
+  background: #2575fc; /* Blue button color */
+  color: #f4f4f4;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.project-card .btn:hover {
+  background: #6a11cb; /* Brighter blue on hover */
+}
+
+/* Project Card Hover Animation */
+.project-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Add a stronger shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+  background-color: #1e1e1e; /* Dark background for contrast */
+  padding: 10px;
+  border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.skills span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #333; /* Slightly lighter background for skill items */
+  color: #f4f4f4; /* Light text color for readability */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.skills span i {
+  color: #ffd700; /* Gold color for icons to make them stand out */
+}
+
+/* Skill Hover Animation */
+.skills span:hover {
+  transform: translateY(-5px); /* Move up slightly */
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.cta {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.cta .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #2575fc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta .btn:hover {
+  background: #6a11cb;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Button Hover Animation */
+.btn:hover {
+  transform: scale(1.1); /* Slightly enlarge the button */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e; /* Dark footer background */
+  text-align: center;
+  padding: 10px;
+  color: #f4f4f4;
+  padding: 10px 0;
+}
+
+footer .socials a {
+  margin: 0 10px;
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+footer .socials a:hover {
+  color: #ffd700; /* Gold hover effect for social icons */
+}
+
+/* General Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply Fade-In to Sections */
+.hero, .introduction, .featured-projects, .skills, .cta, footer {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Scroll Animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.scroll-animate {
+  opacity: 0; /* Start hidden */
+  animation: slideIn 1s ease-in-out forwards;
+}
